@@ -91,4 +91,4 @@ This extension will greatly help you write cleaner, easier to read code. When yo
 
 ### Install:
 - `sudo apt install nodejs`
-- `sudo apt install 
+- `sudo apt install other stuff`
