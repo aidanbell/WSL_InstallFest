@@ -26,7 +26,7 @@ We'll be going with Ubuntu, because of its stability, user-friendliness, and per
 Once it's finished downloading and installing, click Launch to open a new terminal! At first, it will take a second to install and get set up, but eventually it will ask you for a new username and password. These will be your credentials for your new Linux environment, and can be the same, or different than your Windows credentials.
 
 The first thing we want to do with our fresh-off-the-shelf distro is check for and run updates! In Ubuntu, our package manager (like the app store, or Microsoft store) is called `apt`, and we'll use it a lot to get some key things installed. First of all, we're going to use it to update and upgrade our new system by first entering `sudo apt update`, which will fetch all of our available updates. 
-> You'll notice that you're prompted for your password. This is because we're using `sudo`, which is our linux equivilent of 'Running as Administrator'.
+> You'll notice that you're prompted for your password. This is because we're using `sudo`, which is our linux equivilent of 'Running as Administrator'. You'll also notice that your password does not appear on screen as you type it. Don't worry, this is just to protect you against people peering over your shoulder, the password is still being typed. 
 
 Once that has completed (it could take a minute), we're going to run all of our new updates with `sudo apt upgrade`. This will prompt you with a `[y/n]`, so just type `y` and hit enter. 
 
@@ -89,6 +89,33 @@ This is the extension that VSCode recommends to users using the WSL. It allows f
 ##### Prettier - Code formatter
 This extension will greatly help you write cleaner, easier to read code. When you save a file, it will touch up any indenting or line breaks. 
 
-### Install:
-- `sudo apt install nodejs`
-- `sudo apt install other stuff`
+### Git
+Git will be our go-to for version control and making our code more widely accessable. Back in your Ubuntu terminal, type the following command to install Git
+> `sudo apt install git`
+
+## Unit 2 Tools and Programs
+---
+### Node.js
+NodeJS will be used in our second unit, but lets get it installed and set up right now with the following command:
+> `sudo apt install nodejs`
+
+### MongoDB
+Our first Database! We'll install it similarly to how we install everything else:
+> `sudo apt install mongodb`
+
+To make sure that it installed correctly, run `mongod --version`. You should see the version number for what you just installed. Finally, we'll set MongoDB up to run when we start up our WSL service with this command:
+> `sudo /etc/inid.d/mongodb enable mongod`
+
+## Unit 3 Tools and Programs
+---
+
+### Python3
+We'll be installing and using Python3, since Python2 is no longer supported, and Python3 has been widely integrated. 
+> `sudo apt install python3.8`
+To make sure it installed, we'll check both the version of python (`python3 --version`) as well as pip, which we'll be using to install Python packages (`pip3 --version`)
+
+### PostgreSQL
+This is going to be our second Database that we'll be using. We'll install it along with the -contrib package, which has some extra utilities. 
+> `sudo apt install postgresql postgresql-contrib`
+
+### Django
