@@ -104,7 +104,7 @@ Our first Database! We'll install it similarly to how we install everything else
 > `sudo apt install mongodb`
 
 To make sure that it installed correctly, run `mongod --version`. You should see the version number for what you just installed. Finally, we'll set MongoDB up to run when we start up our WSL service with this command:
-> `sudo /etc/inid.d/mongodb enable mongod`
+> `sudo /etc/init.d/mongodb enable mongod`
 
 ## Unit 3 Tools and Programs
 ---
