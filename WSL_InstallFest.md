@@ -99,6 +99,13 @@ Git will be our go-to for version control and making our code more widely access
 NodeJS will be used in our second unit, but lets get it installed and set up right now with the following command:
 > `sudo apt install nodejs`
 
+We will also need to download Nodes Package Manager, or "npm"
+> `sudo apt install npm`
+
+To verify that these both installed, we can check by calling:
+> `node --version`
+> `npm -- version`
+
 ### MongoDB
 Our first Database! We'll install it similarly to how we install everything else:
 > `sudo apt install mongodb`
@@ -112,10 +119,14 @@ To make sure that it installed correctly, run `mongod --version`. You should see
 ### Python3
 We'll be installing and using Python3, since Python2 is no longer supported, and Python3 has been widely integrated. 
 > `sudo apt install python3.8`
-To make sure it installed, we'll check both the version of python (`python3 --version`) as well as pip, which we'll be using to install Python packages (`pip3 --version`)
+
+To make sure it installed, we'll check both the version of python (`python3 --version`) as well as pip, which we'll be using to install Python packages (`pip3 --version`). If pip did not install, you can install it with this command:
+> `sudo apt install python3-pip`
 
 ### PostgreSQL
 This is going to be our second Database that we'll be using. We'll install it along with the -contrib package, which has some extra utilities. 
 > `sudo apt install postgresql postgresql-contrib`
 
 ### Django
+Django is a full-featured framework that we will be learning. We install it with the Python Package Manager that we installed earlier:
+> `pip3 install Django` [Capital D]
